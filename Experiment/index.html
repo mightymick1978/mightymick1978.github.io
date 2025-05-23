@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Supercars Quartett</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="importmap">
+    {
+      "imports": {
+        "canvas-confetti": "https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.2/dist/confetti.module.mjs"
+      }
+    }
+    </script>
+</head>
+<body>
+    <div id="game-container">
+        <header>
+            <h1>Supercars Quartett</h1>
+            <div id="volume-control">
+                <img id="volume-icon" src="volume_on.png" alt="Volume">
+            </div>
+        </header>
+
+        <div id="game-board">
+            <div class="player-area" id="player-area">
+                <h2>You</h2>
+                <p>Cards: <span id="player-card-count">0</span></p>
+                <div id="player-card-slot" class="card-slot">
+                    <!-- Player card will be rendered here -->
+                </div>
+            </div>
+
+            <div class="player-area" id="cpu-area">
+                <h2>CPU</h2>
+                <p>Cards: <span id="cpu-card-count">0</span></p>
+                <div id="cpu-card-slot" class="card-slot">
+                    <!-- CPU card will be rendered here -->
+                </div>
+            </div>
+        </div>
+
+        <div id="message-area">
+            <p id="game-message">Loading game...</p>
+        </div>
+        
+        <div id="fireworks-container"></div>
+
+    </div>
+    <script type="module" src="main.js"></script>
+</body>
+</html>
+
